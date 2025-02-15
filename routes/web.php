@@ -14,4 +14,7 @@ use App\Http\Controllers\GreetController;
 
 Route::get('/greet', [GreetController::class, 'show']);
 
+use App\Http\Controllers\PostController;
+Route::resource('/posts', Postcontroller::class);
+
 ?>
